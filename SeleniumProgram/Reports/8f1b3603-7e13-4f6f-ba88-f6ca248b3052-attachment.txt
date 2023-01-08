@@ -1,0 +1,7 @@
+get driver
+driver.find_element by ID or XPATH
+open facebook url
+open amazon url
+driver.maximize_window()
+page title
+driver.close()

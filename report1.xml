@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="7" time="0.200" timestamp="2023-01-02T19:31:39.304152" hostname="HP"><testcase classname="SeleniumProgram.test_first_program" name="test_first" time="0.001"><failure message="assert 10 == 20">def test_first():
+        a = 10
+        b = 20
+    
+&gt;       assert a == b
+E       assert 10 == 20
+
+SeleniumProgram\test_first_program.py:5: AssertionError</failure></testcase><testcase classname="SeleniumProgram.test_first_program" name="test_second" time="0.001" /><testcase classname="SeleniumProgram.test_first_program" name="test_third" time="0.001"><failure message="assert 20 == 10">def test_third():
+        a = 10
+        b = 20
+    
+&gt;       assert b == a
+E       assert 20 == 10
+
+SeleniumProgram\test_first_program.py:19: AssertionError</failure></testcase><testcase classname="SeleniumProgram.test_first_program" name="test_four" time="0.001" /><testcase classname="SeleniumProgram.test_second_program" name="test_add" time="0.001" /><testcase classname="SeleniumProgram.test_second_program" name="test_sub" time="0.001" /><testcase classname="SeleniumProgram.test_second_program" name="test_sub_1" time="0.001"><failure message="assert 0 == 10">def test_sub_1():
+        x = 10
+        y = 10
+        result = x - y
+&gt;       assert result == 10
+E       assert 0 == 10
+
+SeleniumProgram\test_second_program.py:19: AssertionError</failure></testcase></testsuite></testsuites>
