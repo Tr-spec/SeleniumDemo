@@ -1,6 +1,7 @@
 import time
 
 from selenium import webdriver
+import openpyxl
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
@@ -47,10 +48,54 @@ driver.maximize_window()
 
 
 # explicit wait
-driver.get("https://the-internet.herokuapp.com/dynamic_loading/2")
-driver.find_element(By.XPATH, "//button[text()='Start']").click()
+# driver.get("https://the-internet.herokuapp.com/dynamic_loading/2")
+# driver.find_element(By.XPATH, "//button[text()='Start']").click()
+#
+# locator = (By.XPATH, "//div[@id='finish']//h4")
+# element = WebDriverWait(driver, 10).until(expected_conditions.presence_of_element_located(locator))
+# print(element.get_attribute('innerHTML'))
 
-locator = (By.XPATH, "//div[@id='finish']//h4")
-element = WebDriverWait(driver, 10).until(expected_conditions.presence_of_element_located(locator))
+# Excel operations
+
+# path = "D:\ExcelOperation\orders.xlsx"
+#
+# workbook = openpyxl.load_workbook(path)
+#
+# sheet = workbook['SSMS']
+#
+# row = sheet.max_row
+# col = sheet.max_column
+#
+# print(row)
+# print(col)
+#
+# for r in range(1, row + 1):
+#     for c in range(1, col + 1):
+#         print(sheet.cell(r, c).value, end=' ')
+#     print()
+
+# explicit wait
+driver.get("https://demo.automationtesting.in/JqueryProgressBar.html")
+driver.find_element(By.XPATH, "//button[@id='downloadButton']").click()
+
+locator = (By.XPATH, "(//div[normalize-space()='Complete!'])[2]")
+element = WebDriverWait(driver, 30).until(expected_conditions.presence_of_element_located(locator))
 print(element.get_attribute('innerHTML'))
+
+time.sleep(3)
+driver.find_element(By.XPATH, "//button[normalize-space()='Close']").click()
+
+time.sleep(5)
+
+
+
+
+
+
+
+
+
+
+
+
 
