@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8"/>
@@ -253,9 +253,12 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>myHTMLReport.html</h1>
-    <p>Report generated on 02-Jan-2023 at 22:27:30 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 11-Jan-2023 at 18:50:19 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
+      <tr>
+        <td>JAVA_HOME</td>
+        <td>C:\Program Files\Java\jdk-11.0.16.1</td></tr>
       <tr>
         <td>Packages</td>
         <td>{"pluggy": "1.0.0", "pytest": "7.2.0"}</td></tr>
@@ -264,13 +267,13 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Windows-10-10.0.18363-SP0</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{"allure-pytest": "2.12.0", "html": "3.2.0", "metadata": "2.0.4"}</td></tr>
+        <td>{"allure-pytest": "2.12.0", "html": "3.2.0", "metadata": "2.0.4", "xdist": "3.1.0"}</td></tr>
       <tr>
         <td>Python</td>
         <td>3.11.0</td></tr></table>
     <h2>Summary</h2>
-    <p>7 tests ran in 0.20 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">3 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>34 tests ran in 81.01 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">21 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">3 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">11 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">1 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">1 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -281,6 +284,42 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">SeleniumProgram/test_custom_markers.py::test_1</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">@pytest.mark.smoke<br/>    def test_1():<br/>        a = 10<br/>        b = 10<br/>        result = a + b<br/>&gt;       assert result == 10<br/><span class="error">E       assert 20 == 10</span><br/><br/>SeleniumProgram\test_custom_markers.py:9: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">SeleniumProgram/test_custom_markers.py::test_3</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">@pytest.mark.smoke<br/>    def test_3():<br/>        a = 10<br/>        b = 10<br/>        result = a + b<br/>&gt;       assert result == 10<br/><span class="error">E       assert 20 == 10</span><br/><br/>SeleniumProgram\test_custom_markers.py:24: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">SeleniumProgram/test_custom_markers.py::test_check_is</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">@pytest.mark.regression<br/>    def test_check_is():<br/>        name = &quot;Credence&quot;<br/>        message = &quot;Credence is the best place to learn and also extended family&quot;<br/>&gt;       assert name is message  # is =&gt;  equal to<br/><span class="error">E       AssertionError: assert &#x27;Credence&#x27; is &#x27;Credence is the best place to learn and also extended family&#x27;</span><br/><br/>SeleniumProgram\test_custom_markers.py:62: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">SeleniumProgram/test_custom_markers.py::test_w</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">@pytest.mark.swapnil<br/>    def test_w():<br/>        name = &quot;swapnil&quot;<br/>        message = &quot;swapnil shastrakar&quot;<br/>&gt;       assert name is message<br/><span class="error">E       AssertionError: assert &#x27;swapnil&#x27; is &#x27;swapnil shastrakar&#x27;</span><br/><br/>SeleniumProgram\test_custom_markers.py:76: AssertionError<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
@@ -302,12 +341,206 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
+          <td class="col-name">SeleniumProgram/test_parameterize.py::test_login[user1-pass1]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">username = &#x27;user1&#x27;, password = &#x27;pass1&#x27;<br/><br/>    @pytest.mark.parametrize(&quot;username, password&quot;,<br/>                             [<br/>                                 (&#x27;user1&#x27;, &#x27;pass1&#x27;),<br/>                                 (&#x27;user2&#x27;, &#x27;pass2&#x27;),<br/>                                 (&#x27;user3&#x27;, &#x27;pass3&#x27;),<br/>                                 (&#x27;user4&#x27;, &#x27;pass4&#x27;),<br/>                                 (&#x27;user5&#x27;, &#x27;pass5&#x27;)<br/>                             ]<br/>                             )<br/>    def test_login(username, password):<br/>        print(f&quot;User Name = {username} Password = {password}&quot;)<br/>        if username == &#x27;user4&#x27; and password == &#x27;pass4&#x27;:<br/>            assert True<br/>        else:<br/>&gt;           assert False<br/><span class="error">E           assert False</span><br/><br/>SeleniumProgram\test_parameterize.py:18: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>User Name = user1 Password = pass1
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">SeleniumProgram/test_parameterize.py::test_login[user2-pass2]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">username = &#x27;user2&#x27;, password = &#x27;pass2&#x27;<br/><br/>    @pytest.mark.parametrize(&quot;username, password&quot;,<br/>                             [<br/>                                 (&#x27;user1&#x27;, &#x27;pass1&#x27;),<br/>                                 (&#x27;user2&#x27;, &#x27;pass2&#x27;),<br/>                                 (&#x27;user3&#x27;, &#x27;pass3&#x27;),<br/>                                 (&#x27;user4&#x27;, &#x27;pass4&#x27;),<br/>                                 (&#x27;user5&#x27;, &#x27;pass5&#x27;)<br/>                             ]<br/>                             )<br/>    def test_login(username, password):<br/>        print(f&quot;User Name = {username} Password = {password}&quot;)<br/>        if username == &#x27;user4&#x27; and password == &#x27;pass4&#x27;:<br/>            assert True<br/>        else:<br/>&gt;           assert False<br/><span class="error">E           assert False</span><br/><br/>SeleniumProgram\test_parameterize.py:18: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>User Name = user2 Password = pass2
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">SeleniumProgram/test_parameterize.py::test_login[user3-pass3]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">username = &#x27;user3&#x27;, password = &#x27;pass3&#x27;<br/><br/>    @pytest.mark.parametrize(&quot;username, password&quot;,<br/>                             [<br/>                                 (&#x27;user1&#x27;, &#x27;pass1&#x27;),<br/>                                 (&#x27;user2&#x27;, &#x27;pass2&#x27;),<br/>                                 (&#x27;user3&#x27;, &#x27;pass3&#x27;),<br/>                                 (&#x27;user4&#x27;, &#x27;pass4&#x27;),<br/>                                 (&#x27;user5&#x27;, &#x27;pass5&#x27;)<br/>                             ]<br/>                             )<br/>    def test_login(username, password):<br/>        print(f&quot;User Name = {username} Password = {password}&quot;)<br/>        if username == &#x27;user4&#x27; and password == &#x27;pass4&#x27;:<br/>            assert True<br/>        else:<br/>&gt;           assert False<br/><span class="error">E           assert False</span><br/><br/>SeleniumProgram\test_parameterize.py:18: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>User Name = user3 Password = pass3
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">SeleniumProgram/test_parameterize.py::test_login[user5-pass5]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">username = &#x27;user5&#x27;, password = &#x27;pass5&#x27;<br/><br/>    @pytest.mark.parametrize(&quot;username, password&quot;,<br/>                             [<br/>                                 (&#x27;user1&#x27;, &#x27;pass1&#x27;),<br/>                                 (&#x27;user2&#x27;, &#x27;pass2&#x27;),<br/>                                 (&#x27;user3&#x27;, &#x27;pass3&#x27;),<br/>                                 (&#x27;user4&#x27;, &#x27;pass4&#x27;),<br/>                                 (&#x27;user5&#x27;, &#x27;pass5&#x27;)<br/>                             ]<br/>                             )<br/>    def test_login(username, password):<br/>        print(f&quot;User Name = {username} Password = {password}&quot;)<br/>        if username == &#x27;user4&#x27; and password == &#x27;pass4&#x27;:<br/>            assert True<br/>        else:<br/>&gt;           assert False<br/><span class="error">E           assert False</span><br/><br/>SeleniumProgram\test_parameterize.py:18: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>User Name = user5 Password = pass5
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
           <td class="col-name">SeleniumProgram/test_second_program.py::test_sub_1</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log">def test_sub_1():<br/>        x = 10<br/>        y = 10<br/>        result = x - y<br/>&gt;       assert result == 10<br/><span class="error">E       assert 0 == 10</span><br/><br/>SeleniumProgram\test_second_program.py:19: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="xfailed results-table-row">
+        <tr>
+          <td class="col-result">XFailed</td>
+          <td class="col-name">SeleniumProgram/test_markers.py::test_6</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">@pytest.mark.xfail<br/>    def test_6():<br/>        a = 10<br/>        b = 20<br/>    <br/>&gt;       assert a &gt; b    # xfailed<br/><span class="error">E       assert 10 &gt; 20</span><br/><br/>SeleniumProgram\test_markers.py:51: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="xpassed results-table-row">
+        <tr>
+          <td class="col-result">XPassed</td>
+          <td class="col-name">SeleniumProgram/test_markers.py::test_5</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="skipped results-table-row">
+        <tr>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">SeleniumProgram/test_markers.py::test_1</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">(&#x27;C:\\Users\\Swapnil\\PycharmProjects\\SeleniumDemo\\SeleniumProgram\\test_markers.py&#x27;, 6, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+      <tbody class="skipped results-table-row">
+        <tr>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">SeleniumProgram/test_markers.py::test_2</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">(&#x27;C:\\Users\\Swapnil\\PycharmProjects\\SeleniumDemo\\SeleniumProgram\\test_markers.py&#x27;, 14, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+      <tbody class="skipped results-table-row">
+        <tr>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">SeleniumProgram/test_markers.py::test_4</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">(&#x27;C:\\Users\\Swapnil\\PycharmProjects\\SeleniumDemo\\SeleniumProgram\\test_markers.py&#x27;, 32, &quot;Skipped: sys.version_info(major=3, minor=11, micro=0, releaselevel=&#x27;final&#x27;, serial=0) value not supported&quot;)<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_Method.py::TestClass::test_1</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Setup Method Opening
+<br/> ------------------------------Captured stdout call------------------------------ <br/>This is method 1
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Setup Method Closing
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_Method.py::TestClass::test_2</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Setup Method Opening
+<br/> ------------------------------Captured stdout call------------------------------ <br/>This is method 2
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Setup Method Closing
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_custom_markers.py::test_2</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_custom_markers.py::test_4</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_custom_markers.py::test_t4</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_custom_markers.py::test_check_in</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_custom_markers.py::test_s</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_facebookpageobjectclass.py::TestLogin::test_login</td>
+          <td class="col-duration">16.57</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Facebook � log in or sign up
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_first_fixture_selenium.py::test_facebook_login</td>
+          <td class="col-duration">7.31</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ----------------------------Captured stdout teardown---------------------------- <br/>Facebook � log in or sign up
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_first_fixture_selenium.py::test_amazon_login</td>
+          <td class="col-duration">24.35</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ----------------------------Captured stdout teardown---------------------------- <br/>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_first_fixture_selenium.py::test_python_school</td>
+          <td class="col-duration">30.99</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ----------------------------Captured stdout teardown---------------------------- <br/>Python Tutorial
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -326,6 +559,75 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="extra" colspan="4">
             <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_first_program.py::test_five</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_first_program.py::test_six</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_fixture.py::test_amazon</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>get driver
+driver.find_element by ID or XPATH
+open facebook url
+<br/> ------------------------------Captured stdout call------------------------------ <br/>open amazon url
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>driver.maximize_window()
+page title
+driver.close()
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_fixture.py::test_flipkart</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>get driver
+driver.find_element by ID or XPATH
+open facebook url
+<br/> ------------------------------Captured stdout call------------------------------ <br/>open flipkart url
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>driver.maximize_window()
+page title
+driver.close()
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_markers.py::test_3</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">SeleniumProgram/test_parameterize.py::test_login[user4-pass4]</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>User Name = user4 Password = pass4
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>

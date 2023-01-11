@@ -14,7 +14,7 @@
 #
 # mc = my_class()
 # mc.add_func()
-
+import time
 
 # class my_selenium:
 #
@@ -36,35 +36,37 @@
 # mc3.add_cls()
 
 
-class my_class:
-    name = "swapnil"
-    salary = 1000000
-    profession = "Automation QA"
+# class my_class:
+#     name = "swapnil"
+#     salary = 1000000
+#     profession = "Automation QA"
+#
+#     def info_1(self):
+#         print(f"name = {self.name}, salary = {self.salary}, profession = {self.profession}")
+#
+#
+# mc1 = my_class()
+# mc1.info_1()
+#
+# mc1.salary = 12000000
+# mc1.info_1()
+# mc2 = my_class()
+# mc2.info_1()
+#
+# print(mc1.salary)
+#
+#
+# str = "wel22co3r23me"
+#
+# sum = 0
+# for i in str:
+#     if i.isdigit():
+#         sum = sum + int(i)
+# print(sum)
 
-    def info_1(self):
-        print(f"name = {self.name}, salary = {self.salary}, profession = {self.profession}")
-
-
-mc1 = my_class()
-mc1.info_1()
-
-mc1.salary = 12000000
-mc1.info_1()
-mc2 = my_class()
-mc2.info_1()
-
-print(mc1.salary)
-
-
-str = "wel22co3r23me"
-
-sum = 0
-for i in str:
-    if i.isdigit():
-        sum = sum + int(i)
-print(sum)
-
-
+for i in range(11):
+    time.sleep(1.5)
+    print("hello world")
 
 
 

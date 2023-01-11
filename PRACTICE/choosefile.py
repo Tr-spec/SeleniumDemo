@@ -75,17 +75,17 @@ driver.maximize_window()
 #     print()
 
 # explicit wait
-driver.get("https://demo.automationtesting.in/JqueryProgressBar.html")
-driver.find_element(By.XPATH, "//button[@id='downloadButton']").click()
-
-locator = (By.XPATH, "(//div[normalize-space()='Complete!'])[2]")
-element = WebDriverWait(driver, 30).until(expected_conditions.presence_of_element_located(locator))
-print(element.get_attribute('innerHTML'))
-
-time.sleep(3)
-driver.find_element(By.XPATH, "//button[normalize-space()='Close']").click()
-
-time.sleep(5)
+# driver.get("https://demo.automationtesting.in/JqueryProgressBar.html")
+# driver.find_element(By.XPATH, "//button[@id='downloadButton']").click()
+#
+# locator = (By.XPATH, "(//div[normalize-space()='Complete!'])[2]")
+# element = WebDriverWait(driver, 30).until(expected_conditions.presence_of_element_located(locator))
+# print(element.get_attribute('innerHTML'))
+#
+# time.sleep(3)
+# driver.find_element(By.XPATH, "//button[normalize-space()='Close']").click()
+#
+# time.sleep(5)
 
 
 

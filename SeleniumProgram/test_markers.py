@@ -36,11 +36,11 @@ def test_4():
 
 
 @pytest.mark.xfail
-def test_5():       # @pytest.mark.xfail
+def test_5():  # @pytest.mark.xfail
     a = 100
     b = 100
 
-    assert a == b   # xpassed
+    assert a == b  # xpassed
 
 
 @pytest.mark.xfail
@@ -48,5 +48,22 @@ def test_6():
     a = 10
     b = 20
 
-    assert a > b    # xfailed
+    assert a > b  # xfailed
 
+
+@pytest.mark.xfail
+def test_006():
+    a = 1000
+    b = 20000
+    result = a + b
+
+    assert result == 200
+
+
+@pytest.mark.xfail
+def test_007():
+    a = 100
+    b = 200
+    result = a + b
+
+    assert result == 300
