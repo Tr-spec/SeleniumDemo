@@ -6,8 +6,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-driver = webdriver.Chrome()
-driver.maximize_window()
+# driver = webdriver.Chrome()
+# driver.maximize_window()
 
 # upload
 # driver.get("https://demo.automationtesting.in/Register.html")
@@ -88,14 +88,39 @@ driver.maximize_window()
 # time.sleep(5)
 
 
+# filepath = r"D:\FILEOPERATIONS\CT12.txt"
+# with open(filepath, 'r') as filVariable:
+#     fileContent = filVariable.read()
+#     print(fileContent)
 
 
+# filepath = r"D:\FILEOPERATIONS\CT12.txt"
+# fileContent = "\nI am learning selenium framework"
+# with open(filepath, 'r') as fileVariable:
+#     temp = fileVariable.read()
+#     print(fileVariable)
 
 
+# class My_function:
+#     __myname = "swapnil.s.shastrakar"  # private attribute which can be used within class
+#     expenses = "950000"
+#     affermation = "civil"
+#
+#     def get_Details(self):
+#         return self.expenses
+#
+#
+# mc = My_function()
 
+# ------------------------------------------
 
+# filepath = r"D:\FILEOPERATIONS\sp_etl log.txt"
+# with open(filepath, 'r') as fileVariable:
+#     fileContent = fileVariable.read()
+#     print(fileContent)
 
-
-
-
-
+# ------------------------------------------
+# filePath = r"D:\FILEOPERATIONS\jen.txt"
+# with open(filePath, 'r') as fileVariable:
+#     fileContent = fileVariable.read()
+#     print(fileContent)

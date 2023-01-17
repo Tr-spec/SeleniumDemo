@@ -16,6 +16,9 @@
 # mc.add_func()
 import time
 
+from PRACTICE.choosefile import My_function
+
+
 # class my_selenium:
 #
 #     def __init__(self, firstnum, secondnum):
@@ -64,9 +67,23 @@ import time
 #         sum = sum + int(i)
 # print(sum)
 
-for i in range(11):
-    time.sleep(1.5)
-    print("hello world")
+# for i in range(11):
+#     time.sleep(1.5)
+#     print("hello world")
+
+
+class my_class(My_function):
+    name = "swapnil"
+    salary = 1000000
+    profession = "Automation QA"
+
+    def info_1(self):
+        print(f"name = {self.name}, salary = {self.salary}, profession = {self.profession}")
+
+
+mc = my_class()
+obj = mc.get_Details()
+print(obj)
 
 
 
