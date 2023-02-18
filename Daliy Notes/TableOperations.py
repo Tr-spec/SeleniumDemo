@@ -39,11 +39,7 @@ print(f"Total Columns in Table = {cols}")
 
 print("Company" + ' ' + "Contact" + ' ' + "Country")
 
-for r in range(2, rows + 1):
-    for c in range(1, cols + 1):
-        value = driver.find_element(By.XPATH, "//*[@id='customers']/tbody/tr["+str(r)+"]/td["+str(c)+"]").text
-        print(value, end=' ')
-    print()
+Z
 
 
 

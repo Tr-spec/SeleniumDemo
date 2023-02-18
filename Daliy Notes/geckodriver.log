@@ -3968,3 +3968,12 @@ JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 560: NotFoundEr
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 560: NotFoundError: No such JSWindowActor 'DevToolsFrame'
 1672236303338	Marionette	INFO	Stopped listening on port 58718
 !!! error running onStopped callback: TypeError: callback is not a function
+1676434116726	geckodriver	INFO	Listening on 127.0.0.1:54667
+1676434119800	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54668" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Swapnil\\AppData\\Local\\Temp\\rust_mozprofile2N1OZC"
+1676434124844	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1676434124886	Marionette	INFO	Listening on port 54684
+Read port: 54684
+WebDriver BiDi listening on ws://127.0.0.1:54668
+Read port: 54684
+Read port: 54684
